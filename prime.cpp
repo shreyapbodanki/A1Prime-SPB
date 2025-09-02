@@ -6,7 +6,7 @@ static inline void bump(long long* p) { if (p) (*p)++; }
 bool isPrimeHalf(int n, long long* modOps) {
     if (n < 2) return false;
     if (n == 2) return true;
-    if (n == 3 || n == 5) { bump(modOps); (void)(n % 3); return true; }
+    if ((n & 1) && n < 9) { bump(modOps); (void)(n % 3); return true; }
     if ((n & 1) == 0) return false;
     for (int d = 3; d <= n / 2; d += 2) {
         bump(modOps);
@@ -18,7 +18,7 @@ bool isPrimeHalf(int n, long long* modOps) {
 bool isPrimeSqrt(int n, long long* modOps) {
     if (n < 2) return false;
     if (n == 2) return true;
-    if (n == 3 || n == 5) { bump(modOps); (void)(n % 3); return true; }
+    if ((n & 1) && n < 9) { bump(modOps); (void)(n % 3); return true; }
     if ((n & 1) == 0) return false;
     for (int d = 3; 1LL * d * d <= n; d += 2) {
         bump(modOps);
