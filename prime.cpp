@@ -27,6 +27,9 @@ bool isPrimeSqrt(int n, long long* modOps) {
 
 long long countModOps(PrimeFn isPrime, int lo, int hi) {
     if (lo > hi) { int t = lo; lo = hi; hi = t; }
+    if (hi < 2) return 0;
+    if (lo < 2) lo = 2;
+
     long long total = 0;
     for (int x = lo; x <= hi; ++x) {
         long long local = 0;
@@ -35,3 +38,4 @@ long long countModOps(PrimeFn isPrime, int lo, int hi) {
     }
     return total;
 }
+
