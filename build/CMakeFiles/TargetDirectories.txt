@@ -1,0 +1,6 @@
+/home/shrey/A1Prime-SPB/build/CMakeFiles/prime.dir
+/home/shrey/A1Prime-SPB/build/CMakeFiles/main_exec.dir
+/home/shrey/A1Prime-SPB/build/CMakeFiles/test.out.dir
+/home/shrey/A1Prime-SPB/build/CMakeFiles/test.dir
+/home/shrey/A1Prime-SPB/build/CMakeFiles/edit_cache.dir
+/home/shrey/A1Prime-SPB/build/CMakeFiles/rebuild_cache.dir
